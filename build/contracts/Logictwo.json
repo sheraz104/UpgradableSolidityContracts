@@ -1,0 +1,368 @@
+{
+  "contractName": "Logictwo",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "value",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "addFive",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060ce8061001f6000396000f3006080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fa4f24514604e578063661d8829146076575b600080fd5b348015605957600080fd5b506060608a565b6040518082815260200191505060405180910390f35b348015608157600080fd5b5060886090565b005b60005481565b600560008082825401925050819055505600a165627a7a723058200c32c0180d204839b48ba1bc92acba930c6d405a2e96493d9679c44196c831030029",
+  "deployedBytecode": "0x6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fa4f24514604e578063661d8829146076575b600080fd5b348015605957600080fd5b506060608a565b6040518082815260200191505060405180910390f35b348015608157600080fd5b5060886090565b005b60005481565b600560008082825401925050819055505600a165627a7a723058200c32c0180d204839b48ba1bc92acba930c6d405a2e96493d9679c44196c831030029",
+  "sourceMap": "51:89:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;51:89:1;;;;;;;",
+  "deployedSourceMap": "51:89:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;48:17:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;48:17:4;;;;;;;;;;;;;;;;;;;;;;;85:53:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;85:53:1;;;;;;48:17:4;;;;:::o;85:53:1:-;130:1;121:5;;:10;;;;;;;;;;;85:53::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"./Storage.sol\";\n\ncontract Logictwo is Storage{\n    function addFive() public {\n        value += 5;\n    }\n}",
+  "sourcePath": "/Users/sheraz/Junk/playground/proxy/contracts/Logictwo.sol",
+  "ast": {
+    "absolutePath": "/Users/sheraz/Junk/playground/proxy/contracts/Logictwo.sol",
+    "exportedSymbols": {
+      "Logictwo": [
+        29
+      ]
+    },
+    "id": 30,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 17,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "/Users/sheraz/Junk/playground/proxy/contracts/Storage.sol",
+        "file": "./Storage.sol",
+        "id": 18,
+        "nodeType": "ImportDirective",
+        "scope": 30,
+        "sourceUnit": 143,
+        "src": "26:23:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 19,
+              "name": "Storage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 142,
+              "src": "72:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Storage_$142",
+                "typeString": "contract Storage"
+              }
+            },
+            "id": 20,
+            "nodeType": "InheritanceSpecifier",
+            "src": "72:7:1"
+          }
+        ],
+        "contractDependencies": [
+          142
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 29,
+        "linearizedBaseContracts": [
+          29,
+          142
+        ],
+        "name": "Logictwo",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 27,
+              "nodeType": "Block",
+              "src": "111:27:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 25,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 23,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 141,
+                      "src": "121:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "+=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "35",
+                      "id": 24,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "130:1:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_5_by_1",
+                        "typeString": "int_const 5"
+                      },
+                      "value": "5"
+                    },
+                    "src": "121:10:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ExpressionStatement",
+                  "src": "121:10:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 28,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addFive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "101:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 22,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "111:0:1"
+            },
+            "scope": 29,
+            "src": "85:53:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 30,
+        "src": "51:89:1"
+      }
+    ],
+    "src": "0:140:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/sheraz/Junk/playground/proxy/contracts/Logictwo.sol",
+    "exportedSymbols": {
+      "Logictwo": [
+        29
+      ]
+    },
+    "id": 30,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 17,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "/Users/sheraz/Junk/playground/proxy/contracts/Storage.sol",
+        "file": "./Storage.sol",
+        "id": 18,
+        "nodeType": "ImportDirective",
+        "scope": 30,
+        "sourceUnit": 143,
+        "src": "26:23:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 19,
+              "name": "Storage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 142,
+              "src": "72:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Storage_$142",
+                "typeString": "contract Storage"
+              }
+            },
+            "id": 20,
+            "nodeType": "InheritanceSpecifier",
+            "src": "72:7:1"
+          }
+        ],
+        "contractDependencies": [
+          142
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 29,
+        "linearizedBaseContracts": [
+          29,
+          142
+        ],
+        "name": "Logictwo",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 27,
+              "nodeType": "Block",
+              "src": "111:27:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 25,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 23,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 141,
+                      "src": "121:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "+=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "35",
+                      "id": 24,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "130:1:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_5_by_1",
+                        "typeString": "int_const 5"
+                      },
+                      "value": "5"
+                    },
+                    "src": "121:10:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ExpressionStatement",
+                  "src": "121:10:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 28,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addFive",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "101:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 22,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "111:0:1"
+            },
+            "scope": 29,
+            "src": "85:53:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 30,
+        "src": "51:89:1"
+      }
+    ],
+    "src": "0:140:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x9e2feeb8afe69467df466c6e480f0ac4d0574f18",
+      "transactionHash": "0x8e13b10ab644bcda12f9c76d178562283d837b1c821aec1037b91c9ad5b039a8"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-09-04T05:54:30.502Z"
+}
